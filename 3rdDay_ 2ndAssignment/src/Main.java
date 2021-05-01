@@ -27,7 +27,7 @@ public class Main {
 		Student[] students= { student };		
 		
 		StudentManager studentManager = new StudentManager();
-		studentManager.addMultiple(students);
+		studentManager.addMultiple(users);
 		
 		
 		Instructor instructor= new Instructor();
