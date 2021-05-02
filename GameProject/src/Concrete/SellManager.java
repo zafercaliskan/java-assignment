@@ -1,5 +1,4 @@
 package Concrete;
-
 import Abstract.SellService;
 import Entities.Campaign;
 import Entities.Game;
@@ -9,7 +8,6 @@ public class SellManager implements SellService{
 
 	@Override
 	public void buy(Gamer gamer, Game game, Campaign campaign) {
-		// TODO Auto-generated method stub
-		
+		System.out.println(game.getName() + " kütüphaneye eklendi.");		
 	}
 }

@@ -7,19 +7,19 @@ public class GameManager implements GameService{
 
 	@Override
 	public void add(Game game) {
-		// TODO Auto-generated method stub
+		System.out.println(game.getName()+" eklendi.");
 		
 	}
 
 	@Override
 	public void update(Game game) {
-		// TODO Auto-generated method stub
+		System.out.println(game.getName()+" güncellendi.");
 		
 	}
 
 	@Override
 	public void delete(int gameId) {
-		// TODO Auto-generated method stub
+		System.out.println(gameId+" idli game silindi.");
 		
 	}
 

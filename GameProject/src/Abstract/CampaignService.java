@@ -1,9 +1,9 @@
 package Abstract;
 
-import Entities.Gamer;
+import Entities.Campaign;
 
 public interface CampaignService {
-	void add(Gamer gamer);
-	void update(Gamer gamer);
-	void delete(int gamerId);
+	void add(Campaign campaign);
+	void update(Campaign campaign);
+	void delete(int campaignId);
 }

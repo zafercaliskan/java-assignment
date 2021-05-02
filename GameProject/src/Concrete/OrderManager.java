@@ -7,19 +7,16 @@ public class OrderManager implements OrderService {
 
 	@Override
 	public void add(Order order) {
-		// TODO Auto-generated method stub
-		
+		System.out.println(order.getId() + " idli siparişiniz eklenmiştir.");	
 	}
 
 	@Override
 	public void update(Order order) {
-		// TODO Auto-generated method stub
-		
+		System.out.println(order.getId() + " idli siparişiniz güncellenmiştir.");	
 	}
 
 	@Override
 	public void delete(int orderId) {
-		// TODO Auto-generated method stub
-		
+		System.out.println(orderId + " idli siparişiniz silinmiştir.");	
 	}
 }
