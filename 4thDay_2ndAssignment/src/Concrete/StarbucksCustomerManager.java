@@ -21,7 +21,7 @@ public class StarbucksCustomerManager extends BaseCustomerManager{
         }
         else
         {
-            throw new Exception("Not a valid person");
+           System.out.println("Not a valid person");
         }        
     }	
 }

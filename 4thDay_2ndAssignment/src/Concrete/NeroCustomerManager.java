@@ -21,7 +21,7 @@ public class NeroCustomerManager extends BaseCustomerManager {
         }
         else
         {
-            throw new Exception("Not a valid person");
+            System.out.println("not valid a person");
         }
     } 
 }
