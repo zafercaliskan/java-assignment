@@ -35,7 +35,7 @@ public class CampaignManager implements CampaignService {
 	public void update(Campaign campaign) {
 		
 		Campaign campaignToUpdate = campaigns.stream()                
-        		.filter(s -> s.getId() == campaign.getId())
+        		.filter(c -> c.getId() == campaign.getId())
                 .findFirst()
                 .orElse(null);
         
@@ -57,7 +57,7 @@ public class CampaignManager implements CampaignService {
 	@Override
 	public void delete(int campaignId) {
 		Campaign campaignToDelete = campaigns.stream()                
-        		.filter(s -> s.getId() == campaignId)
+        		.filter(c -> c.getId() == campaignId)
                 .findFirst()
                 .orElse(null);
 		

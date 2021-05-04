@@ -17,13 +17,13 @@ public class Main {
 		GameManager gameManager =new GameManager();
 		GamerManager gamerManager = new  GamerManager(new MernisManager());
 		OrderManager orderManager =new OrderManager();
-		SellManager sellManager =new SellManager(orderManager);
+		SellManager sellManager =new SellManager(new OrderManager());
 		
 		Campaign kampanya1=new Campaign (3,"test kampanya",100);
 		Game game1 =new Game(1,"CSGO",25);
 
 		//gameManager.delete(1);
-		//campaignManager.add(kampanya);
+		//campaignManager.delete(2);
 		//campaignManager.update(kampanya);
 		//campaignManager.delete(2);	
 		
@@ -31,9 +31,9 @@ public class Main {
 		
 		//gamerManager.add(zafer);
 		
-		//Order order=new Order(1,2,3,4,5,50,25,75);
-		Order order=new Order();
-		//orderManager.add(order);
+		Order order=new Order(1,2,3,4,5,50,25,75);
+		//Order order=new Order();
+		//orderManager.delete(3);
 		//orderManager.update(order);
 		//orderManager.delete(2);
 		
