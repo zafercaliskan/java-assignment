@@ -12,15 +12,6 @@ public class Gamer implements Entity {
 	public Gamer() {
 		super();
 	}
-	
-
-	public Gamer(long nationalityId, String firstName, String lastName, int dateOfBirth) {
-		super();
-		this.nationalityId = nationalityId;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.dateOfBirth = dateOfBirth;
-	}
 
 
 	public Gamer(int id, long nationalityId, String firstName, String lastName, int dateOfBirth) {

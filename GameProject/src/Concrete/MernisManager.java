@@ -14,7 +14,8 @@ public class MernisManager implements GamerCheckService{
 		KPSPublicSoapProxy kpsPublicSoapProxy = new KPSPublicSoapProxy(); 
 		try { 
 			result = kpsPublicSoapProxy.TCKimlikNoDogrula(
-					gamer.getNationalityId(),					gamer.getFirstName().toUpperCase(),
+					gamer.getNationalityId(),					
+					gamer.getFirstName().toUpperCase(),
 					gamer.getLastName().toUpperCase(),
 					gamer.getDateOfBirth()
 					); 
