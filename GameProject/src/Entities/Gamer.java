@@ -4,20 +4,32 @@ import Abstract.Entity;
 
 public class Gamer implements Entity {
 	private int id;
-	private String tcNo;
+	private long nationalityId;	
 	private String firstName;
 	private String lastName;
+	private int dateOfBirth;
 	
 	public Gamer() {
 		super();
 	}
+	
 
-	public Gamer(int id, String tcNo, String firstName, String lastName) {
+	public Gamer(long nationalityId, String firstName, String lastName, int dateOfBirth) {
 		super();
-		this.id = id;
-		this.tcNo = tcNo;
+		this.nationalityId = nationalityId;
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.dateOfBirth = dateOfBirth;
+	}
+
+
+	public Gamer(int id, long nationalityId, String firstName, String lastName, int dateOfBirth) {
+		super();
+		this.id = id;
+		this.nationalityId = nationalityId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.dateOfBirth = dateOfBirth;
 	}
 
 	public int getId() {
@@ -28,12 +40,12 @@ public class Gamer implements Entity {
 		this.id = id;
 	}
 
-	public String getTcNo() {
-		return tcNo;
+	public long getNationalityId() {
+		return nationalityId;
 	}
 
-	public void setTcNo(String tcNo) {
-		this.tcNo = tcNo;
+	public void setNationalityId(long nationalityId) {
+		this.nationalityId = nationalityId;
 	}
 
 	public String getFirstName() {
@@ -51,8 +63,16 @@ public class Gamer implements Entity {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+
+	public int getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+	public void setDateOfBirth(int dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}	
 	
 	public String getFullName() {
-		return firstName+ " "+ lastName;
+		return firstName + " " + lastName;
 	}
 }
