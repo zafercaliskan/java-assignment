@@ -7,10 +7,10 @@ import Entities.Gamer;
 import Entities.Order;
 
 public class SellManager implements SellService{
-	private OrderService orderService;
+	private OrderManager orderManager;
 
-	public SellManager(OrderService orderService) {
-		this.orderService = orderService;
+	public SellManager(OrderManager orderManager) {
+		this.orderManager = orderManager;
 	}
 
 	@Override
@@ -21,7 +21,7 @@ public class SellManager implements SellService{
 		Order order =new Order(1,gamer.getId(),game.getId(), campaign.getId(),1,game.getPrice(),
 				discountAmount,amountOfPayment);
 		
-		orderService.add(order);	
+		orderManager.add(order);	
 	}
 
 	@Override
@@ -34,7 +34,6 @@ public class SellManager implements SellService{
 		order.setGameId(game.getId());
 		order.setGamerId(gamer.getId());
 		order.setTotalAmount(game.getPrice());		
-		orderService.add(order);
-		
+		orderManager.add(order);		
 	}
 }

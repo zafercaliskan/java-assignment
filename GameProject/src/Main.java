@@ -3,6 +3,7 @@ import Concrete.GameManager;
 import Concrete.GamerCheckManager;
 import Concrete.GamerManager;
 import Concrete.MernisManager;
+import Concrete.Order2Manager;
 import Concrete.OrderManager;
 import Concrete.SellManager;
 import Entities.Campaign;
@@ -15,9 +16,9 @@ public class Main {
 	public static void main(String[] args) {
 		CampaignManager campaignManager=new CampaignManager();
 		GameManager gameManager =new GameManager();
-		GamerManager gamerManager = new  GamerManager(new MernisManager());
+		GamerManager gamerManager = new  GamerManager(new GamerCheckManager());
 		OrderManager orderManager =new OrderManager();
-		SellManager sellManager =new SellManager(new OrderManager());
+		SellManager sellManager =new SellManager(new Order2Manager());
 		
 		Campaign kampanya1=new Campaign (3,"test kampanya",100);
 		Game game1 =new Game(1,"CSGO",25);
